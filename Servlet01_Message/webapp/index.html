@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+</head>
+<body>
+	<button type="button" id="toInput">toInput</button>
+	<button type="button" id="toOutput">toOutput</button>
+	<script>
+		document.getElementById("toInput").onclick = function(){
+			// input.html 이동 
+			// servlet을 거쳐서 다른 페이지로 이동할 수 있게 만들어 줌 
+			// why? 페이지 간의 이동에 있어 접근권한/값의 유효성 등 복잡한 로직에 대해 servlet에서 처리 후 이동이 가능하게 만들어 주려고. 
+			
+			// anchor 태그 클릭했을때와 같은 효과
+			location.href = "/toInput.proc";
+		}	
+		
+		document.getElementById("toOutput").onclick = function(){
+			
+			location.href = "/toOutput.proc";
+			
+		}
+	</script>
+</body>
+</html>
