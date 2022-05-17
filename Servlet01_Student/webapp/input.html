@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>학생 등록 페이지</title>
+</head>
+<body>
+
+	<table border="1" align="center">
+	<tr>
+	<th colspan=2>신규 정보 입력</th>
+	</tr>
+<form action="/insert" method="post">	
+	<tr>
+	<td><input type="text" placeholder="이름을 입력하세요" name="name"></td>
+	</tr>
+	<tr>
+	<td><input type="text" placeholder="국어점수를 입력하세요" name="kor"></td>
+	</tr>
+	<tr>
+	<td><input type="text" placeholder="영어점수를 입력하세요" name="eng"></td>
+	</tr>
+	<tr>
+	<td><input type="text" placeholder="수학점수를 입력하세요" name="math"></td>
+	</tr>
+	<tr>
+	<td colspan=2>
+	<button type="submit">입력하기</button>
+	<button type="button" id="backBtn">뒤로가기</button>
+	</td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>
